@@ -2,7 +2,14 @@
 <html lang="zh-Hant-TW">
 
 <head>
-    <meta charset="UTF-8">
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     
     <title>課表</title>
     <style>
@@ -27,7 +34,7 @@
 
         }
         .picture{
-            grid-area: 9/1/12/5;
+            grid-area: 1/11/4/16;
             max-width: 100%;
             max-height: 100%;
         }
@@ -69,12 +76,16 @@
 
         }
         .page{
-            grid-area: 1/9/2/11;
-            color:cornflowerblue;
+            grid-area: 1/9/1/11;
+            color:red;
         }
         .page1{
-            grid-area: 3/9/4/11;
+            grid-area: 2/9/2/11;
             color:cornflowerblue;
+        }
+        .page2{
+            grid-area: 3/9/3/11;
+            color:green;
         }
     </style>
 </head>
@@ -150,15 +161,26 @@
                 <td>16:10</td>
                 <td colspan="5" class="b">下課</td>
             </tr>
-            <p class='word'>abcd</p>
             <a class='page' href="Lab_01.html" >Index Page</a>
             <a class='page1' href="Lab_02.html">Page</a>
+            <a class='page2' href="Lab_03.html">Page2</a>
             <img class='picture' src="backgd2.jpg">
             <table class='title'><tr >
                 <td ><b>選課系統</b></td>
                 <td ><b>學分計算</b></td>
                 <td ><b>課程大綱</b></td>
             </tr></table>
+            <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
         </tbody>
     </table>
 </body>
