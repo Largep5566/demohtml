@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <title>課表</title>
+    <style>
+        .total {
+            display: grid;
+            grid-gap: 2px;
+            padding: 2px;
+            grid-template-columns: repeat(20, 1fr);
+            grid-template-rows: repeat(20, 1fr);
+
+        }
+
+        .border {
+            border: 1px solid transparent;
+            grid-area: 5/5/15/15;
+
+
+        }
+
+        .word {
+            grid-area: 15/15/20/20;
+
+        }
+        .picture{
+            grid-area: 1/11/4/16;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .two {
+            background-color: blue;
+        }
+
+        table,
+        tr,
+        td {
+            border-radius: 1cm;
+            border: 1px solid transparent;
+            text-align: center;
+
+        }
+
+        td:first-child {
+            border-radius: 1cm;
+            background-color: blue;
+            border: 1px solid transparent;
+        }
+
+        .a {
+            font-family: "Lucida Console", Times, serif;
+            color: chartreuse;
+        }
+
+        .b {
+            color: crimson;
+            font-size: 30px;
+        }
+        .title{
+            font-style: oblique;
+            font-size: 50px;
+            color:chocolate;
+            grid-area: 1/1/6/5;
+            background-color: blue;
+
+        }
+        .page{
+            grid-area: 1/9/1/11;
+            color:red;
+        }
+        .page1{
+            grid-area: 2/9/2/11;
+            color:cornflowerblue;
+        }
+        .page2{
+            grid-area: 3/9/3/11;
+            color:green;
+        }
+        .x{
+            grid-area: 4/12/5/13;
+            color:burlywood;
+        }
+        .c{
+            grid-area: 2/5/4/7;
+        }
+        .fa-5x{
+            grid-area:2/7/4/9
+        }
+        
+    </style>
+</head>
+
+<body class='total'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+    <table class="border">
+
+        <caption>課表</caption>
+        <thead>
+            <tr class="two">
+                <td> </td>
+                <td><b>星期一</b></td>
+                <td><b>星期二</b></td>
+                <td><b>星期三</b></td>
+                <td><b>星期四</b></td>
+                <td><b>星期五</b></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>09:10</td>
+                <td class="a">python基礎程式設計</td>
+                <td class="a">Web基礎程式設計</td>
+                <td class="a">軟體工程專題</td>
+                <td class="a">python基礎程式設計</td>
+                <td class="a">Web基礎程式設計</td>
+            </tr>
+            <tr>
+                <td>10:10</td>
+                <td class="a">python基礎程式設計</td>
+                <td class="a">Web基礎程式設計</td>
+                <td class="a">軟體工程專題</td>
+                <td class="a">python基礎程式設計</td>
+                <td class="a">Web基礎程式設計</td>
+            </tr>
+            <tr>
+                <td>11:10</td>
+                <td class="a">python基礎程式設計</td>
+                <td class="a">Web基礎程式設計</td>
+                <td class="a">軟體工程專題</td>
+                <td class="a">python基礎程式設計</td>
+                <td class="a">Web基礎程式設計</td>
+            </tr>
+            <tr>
+                <td>12:10</td>
+                <td colspan="5" class="b">午休</td>
+            </tr>
+            <tr>
+                <td>13:10</td>
+                <td class="a">python基礎程式設計</td>
+                <td class="a">Web基礎程式設計</td>
+                <td class="a">資訊概論</td>
+                <td class="a">python基礎程式設計</td>
+                <td class="a">Web基礎程式設計</td>
+            </tr>
+            <tr>
+                <td>14:10</td>
+                <td class="a">python基礎程式設計</td>
+                <td class="a">Web基礎程式設計</td>
+                <td class="a">資訊概論</td>
+                <td class="a">python基礎程式設計</td>
+                <td class="a">Web基礎程式設計</td>
+            </tr>
+            <tr>
+                <td>15:10</td>
+                <td class="a">python基礎程式設計</td>
+                <td class="a">Web基礎程式設計</td>
+                <td class="a">資訊概論</td>
+                <td class="a">python基礎程式設計</td>
+                <td class="a">Web基礎程式設計</td>
+            </tr>
+            <tr>
+                <td>16:10</td>
+                <td colspan="5" class="b">下課</td>
+            </tr>
+            <div class='c'>
+            <a type="button" class="btn btn-primary" href="Lab_01.html">Page0</a>
+            <a type="button" class="btn btn-secondary" href="Lab_02.html">Page1</a>
+            <a type="button" class="btn btn-success" href="Lab_02.html">Page2</a>
+        </div>
+            <img class='picture' src="backgd2.jpg" class="img-thumbnail">
+            <table class='title'><tr >
+                <td ><b>選課系統</b></td>
+                <td ><b>學分計算</b></td>
+            </tr></table>
+            <div class='x'>
+                <i class="fas fa-baseball-ball fa-5x"></i>
+            </div>
+            <div class="fa-3x">
+                <i class="fas fa-spinner fa-spin"></i>
+              </div>
+              <div class="fa-5x">
+                <span class="fa-layers fa-fw" style="background:MistyRose">
+                    <i class="fas fa-calendar"></i>
+                    <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-8 down-3" style="font-weight:900">21</span>
+                  </span>
+              </div>              
+            <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+        </tbody>
+    </table>
+</body>
+
+</html>
